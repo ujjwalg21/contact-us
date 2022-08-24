@@ -55,7 +55,8 @@ body {
 }
 
 .contentbox:hover{
-  background-image: linear-gradient(#5984ee,black);
+  background-image: linear-gradient(#033F4D,#051625);
+  
   transform: scale(1.2);
 }
 
