@@ -46,7 +46,8 @@ body {
 }
 
 .contentbox{
-  background-color: #0C2F4D;
+  
+  background-image: linear-gradient(#012a34,#040f1a,#03323d);
   border: 0.5px solid #07EFF2;
   transition: transform .5s;
   /* clip-path: polygon(0 10%, 0 100%, 100% 100%, 100% 0%, 13% 0%); */
@@ -55,8 +56,8 @@ body {
 }
 
 .contentbox:hover{
-  background-image: linear-gradient(#033F4D,#051625);
-  
+
+  background-image: radial-gradient(#024e5f,#051625,black);
   transform: scale(1.2);
 }
 
