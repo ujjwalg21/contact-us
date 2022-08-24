@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&display=swap');
+
+body {
+  
+  background: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.heading{
   color: white;
+  font-family: 'Barlow Condensed', sans-serif;  
+  font-weight: 900;
+  font-size: 7vh;
+}
+.managers{
+  font-size: 5vh;
+  color: white;
+  font-weight: 400;
+  
+}
+.col-md-3{
+  width: 33%;
+}
+.name {
+  color: white;
+  
+}
+.work {
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.about span {
+  font-size: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.v-profile {
+  color: blue;
+  cursor: pointer;
+}
+
+.box {
+  -webkit-box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+  -moz-box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+  box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+}
+
+.contentbox{
+  background-color: #0C2F4D;
+  border: 0.5px solid #07EFF2;
+  transition: transform .5s;
+  /* clip-path: polygon(0 10%, 0 100%, 100% 100%, 100% 0%, 13% 0%); */
+  margin:0px 1.5vw;
+  
+}
+
+.contentbox:hover{
+  background-image: linear-gradient(#5984ee,black);
+  transform: scale(1.2);
+}
+
+
+i{
+  filter: invert();
+  font-size: 18px;
+  
+}
+a{
+  margin: 12px;
+  
+}
+.logo{
+  transition: transform .5s;
+  filter:brightness(0%) invert(80%) ;
+
+}
+.logo:hover{
+  transform: scale(0.8);
+  filter: none;
+}
+
+.col-md-3 {
+  margin-top: 10px;
+}
+@media (max-width:1000px) {
+  
+  *{
+    box-sizing: content-box;
   }
-  to {
-    transform: rotate(360deg);
+  .col-md-3{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    transform: scale(0.9);
+  } 
+}
+@media (min-width:1000px) {
+
+  .col-md-3{
+    width: 33%;
   }
 }
